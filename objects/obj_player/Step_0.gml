@@ -48,7 +48,7 @@ if place_meeting(x,y+1, obj_wall) and key_jump
 
 #region //CHANGE SPRITE
 
-if place_meeting(x, y + 1, obj_wall) == false
+if (!place_meeting(x, y + 1, obj_wall))
 {
 	//se o personagem estiver no ar troca o sprite
 	sprite_index = spr_jump;
@@ -63,3 +63,7 @@ else if (hspd !=0)
 
 #endregion
 
+if global.life <1 
+{
+    game_restart();
+}
