@@ -56,9 +56,20 @@ if (!place_meeting(x, y + 1, obj_wall))
 else if (hspd !=0)
 {
 	sprite_index = spr_player;
-}else
+}
+if hspd = 0
 {
-	sprite_index = spr_idle
+	if place_meeting(x,y+1, obj_wall)
+	{
+	sprite_index = spr_idle;
+	}
+}
+if hspd!=0
+{
+	if place_meeting(x, y+1, obj_wall)
+	{
+		sprite_index = spr_player;
+	}
 }
 
 #endregion
@@ -67,3 +78,10 @@ if global.life <1
 {
     game_restart();
 }
+
+
+
+
+
+
+
