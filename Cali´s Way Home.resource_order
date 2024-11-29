@@ -22,10 +22,13 @@
     {"name":"obj_enemy","order":4,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_life","order":3,"path":"objects/obj_life/obj_life.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"PlayerStateFree","order":3,"path":"scripts/PlayerStateFree/PlayerStateFree.yy",},
+    {"name":"PlayerStateFreeze","order":2,"path":"scripts/PlayerStateFreeze/PlayerStateFreeze.yy",},
     {"name":"spr_enemy","order":6,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_jump","order":1,"path":"sprites/spr_jump/spr_jump.yy",},
     {"name":"spr_life","order":5,"path":"sprites/spr_life/spr_life.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"Sprite8","order":16,"path":"sprites/Sprite8/Sprite8.yy",},
   ],
 }
