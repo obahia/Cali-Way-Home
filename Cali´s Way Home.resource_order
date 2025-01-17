@@ -7,6 +7,7 @@
     {"name":"Curvas da animação","order":12,"path":"folders/Curvas da animação.yy",},
     {"name":"Extensões","order":14,"path":"folders/Extensões.yy",},
     {"name":"Fontes","order":7,"path":"folders/Fontes.yy",},
+    {"name":"Tiles","order":17,"path":"folders/Tiles.yy",},
     {"name":"Linhas do tempo","order":8,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":9,"path":"folders/Objetos.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
@@ -30,5 +31,6 @@
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"Sprite8","order":16,"path":"sprites/Sprite8/Sprite8.yy",},
+    {"name":"tr_ground","order":1,"path":"tilesets/tr_ground/tr_ground.yy",},
   ],
 }
