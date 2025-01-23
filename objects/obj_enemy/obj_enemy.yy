@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy",
-    "path":"sprites/spr_enemy/spr_enemy.yy",
+    "name":"spr_rat_idle",
+    "path":"sprites/spr_rat_idle/spr_rat_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

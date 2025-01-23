@@ -60,33 +60,33 @@ if place_meeting(x,y+1, obj_wall) and key_jump
 //	break;
 //}
 
-//#region //CHANGE SPRITE
+#region //CHANGE SPRITE
 
-//if (!place_meeting(x, y + 1, obj_wall))
-//{
-//	//se o personagem estiver no ar troca o sprite
-//	sprite_index = spr_jump;
-//}
-//else if (hspd !=0)
-//{
-//	sprite_index = spr_player;
-//}
-//if hspd = 0
-//{
-//	if place_meeting(x,y+1, obj_wall)
-//	{
-//	sprite_index = spr_idle;
-//	}
-//}
-//if hspd!=0
-//{
-//	if place_meeting(x, y+1, obj_wall)
-//	{
-//		sprite_index = spr_player;
-//	}
-//}
+if (!place_meeting(x, y + 1, obj_wall))
+{
+	//se o personagem estiver no ar troca o sprite
+	sprite_index = spr_jump;
+}
+else if (hspd !=0)
+{
+	sprite_index = spr_player;
+}
+if hspd = 0
+{
+	if place_meeting(x,y+1, obj_wall)
+	{
+	sprite_index = spr_idle;
+	}
+}
+if hspd!=0
+{
+	if place_meeting(x, y+1, obj_wall)
+	{
+		sprite_index = spr_player;
+	}
+}
 
-//#endregion
+#endregion
 
     // --- VERIFICA VIDA ---
     if (global.life < 1) {
