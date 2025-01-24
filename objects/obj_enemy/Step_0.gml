@@ -6,3 +6,16 @@ switch(state)
 	
 	case EnemyState.ATTACK: Enemy_State_Chase(); break;
 }
+
+if state = EnemyState.ATTACK
+{
+	hspd =0;
+	sprite_index = spr_rat_attack;
+	
+}
+
+if state = EnemyState.IDLE
+{
+	hspd = 0;
+	sprite_index = spr_rat_idle;
+}

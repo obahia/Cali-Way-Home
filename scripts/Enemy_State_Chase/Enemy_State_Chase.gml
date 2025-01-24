@@ -42,4 +42,15 @@ y += vspd;
 	
 	vir = sign(obj_player.x -x);
 	hspd = vir * 4;
+	
+	//SE O RATO ESTIVER LONGE DO JOGADOR ENTAO FIQUE PARADO
+	if distance_to_object(obj_player) > distance
+	{
+		state = EnemyState.IDLE;
+	}
+	// SE O RATO ESTIVER PERTO DO JOGADOR ENTAO ATAQUE
+	if distance_to_object(obj_player) < 3
+	{
+		state = EnemyState.ATTACK;
+	}
 }
