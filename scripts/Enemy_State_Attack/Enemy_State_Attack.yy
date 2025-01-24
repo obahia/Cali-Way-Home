@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"PlayerStateFree",
+  "%Name":"Enemy_State_Attack",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"PlayerStateFree",
+  "name":"Enemy_State_Attack",
   "parent":{
-    "name":"player",
-    "path":"folders/Scripts/player.yy",
+    "name":"enemy",
+    "path":"folders/Scripts/enemy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -43,24 +43,10 @@ if place_meeting(x,y+1, obj_wall) and key_jump
 #endregion
 
 
-//#region //CHANGE SPRITE
 
-//switch (true)
-//{
-//	case !place_meeting(x,y +1, obj_wall):
-//	sprite_index  = spr_jump;
-//	break;
-	
-//	case hspd != 0 && place_meeting(x, y + 1, obj_wall):
-//	sprite_index = spr_player;
-//	break;
-	
-//	case hspd == 0 && place_meeting(x, y + 1, obj_wall):
-//	sprite_index = spr_idle;
-//	break;
-//}
 
 #region //CHANGE SPRITE
+if (hspd !=0) image_xscale =sign(hspd);
 
 if (!place_meeting(x, y + 1, obj_wall))
 {
@@ -69,7 +55,7 @@ if (!place_meeting(x, y + 1, obj_wall))
 }
 else if (hspd !=0)
 {
-	sprite_index = spr_player;
+	sprite_index = spr_run;
 }
 if hspd = 0
 {
@@ -82,13 +68,13 @@ if hspd!=0
 {
 	if place_meeting(x, y+1, obj_wall)
 	{
-		sprite_index = spr_player;
+		sprite_index = spr_run;
 	}
 }
 
 #endregion
 
-    // --- VERIFICA VIDA ---
+    // --- VERIFICAR VIDA ---
     if (global.life < 1) {
         game_restart();
     }

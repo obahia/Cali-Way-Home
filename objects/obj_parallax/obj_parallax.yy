@@ -8,8 +8,8 @@
   "name":"obj_parallax",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"cameras",
+    "path":"folders/Objetos/cameras.yy",
   },
   "parentObjectId":null,
   "persistent":false,
