@@ -1,2 +1,2 @@
-instance_destroy(other)
-global.life--;
+//instance_destroy(other)
+//global.life--;

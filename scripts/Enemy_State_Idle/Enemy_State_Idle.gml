@@ -43,3 +43,4 @@ y += vspd;
 		sprite_index = spr_rat_run;
 	}
 }
+

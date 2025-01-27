@@ -1,81 +1,68 @@
 function PlayerStateFree() {
     script_execute(get_input);
-    
-	#region MOVIMENT
-var move = key_right - key_left
 
-hspd = move * spd;
+    #region MOVIMENT
+    var move = key_right - key_left;
 
-vspd = vspd + grv;
+    hspd = move * spd;
+    vspd = vspd + grv;
 
-if(hspd !=0) image_xscale = sign(hspd);
+    if (hspd != 0) image_xscale = sign(hspd);
 
-//HORIZONTAL COLISION
+    // HORIZONTAL COLISION
+    if (place_meeting(x + hspd, y, obj_wall)) {
+        while (!place_meeting(x + sign(hspd), y, obj_wall)) {
+            x = x + sign(hspd);
+        }
+        hspd = 0;
+    }
+    x += hspd;
 
-if place_meeting(x + hspd,y,obj_wall)
-{
-	while(!place_meeting(x + sign(hspd),y,obj_wall))
-	{
-		x = x + sign(hspd)
-	}
-	hspd =0;
-}
-x += hspd;
+    // VERTICAL COLISION
+    if (place_meeting(x, y + vspd, obj_wall)) {
+        while (!place_meeting(x, y + sign(vspd), obj_wall)) {
+            y += sign(vspd);
+        }
+        vspd = 0;
+    }
+    y += vspd;
 
-//VERTICAL COLISION
+    // JUMP
+    if (place_meeting(x, y + 1, obj_wall) && key_jump) {
+        vspd -= 8;
+    }
+    #endregion
 
-if place_meeting(x,y +vspd,obj_wall)
-{
-	while(!place_meeting(x,y + sign(vspd),obj_wall))
-	{
-		y += sign(vspd)
-	}
-	vspd =0;
-}
-y += vspd;
+    #region CHANGE SPRITE
+    if (hspd != 0) image_xscale = sign(hspd);
 
-//JUMP
+    if (!place_meeting(x, y + 1, obj_wall)) {
+        if (vspd > 0) {
+            sprite_index = spr_fall;
+        } else if (vspd < 0) {
+            sprite_index = spr_jump;
+        }
+    } else if (hspd != 0) {
+        sprite_index = spr_run;
+    } else {
+        sprite_index = spr_idle;
+    }
+    #endregion
 
-if place_meeting(x,y+1, obj_wall) and key_jump
-{
-	vspd -=8;
-}
-#endregion
-
-
-
-
-#region //CHANGE SPRITE
-if (hspd !=0) image_xscale =sign(hspd);
-
-if (!place_meeting(x, y + 1, obj_wall))
-{
-	//se o personagem estiver no ar troca o sprite
-	sprite_index = spr_jump;
-}
-else if (hspd !=0)
-{
-	sprite_index = spr_run;
-}
-if hspd = 0
-{
-	if place_meeting(x,y+1, obj_wall)
-	{
-	sprite_index = spr_idle;
-	}
-}
-if hspd!=0
-{
-	if place_meeting(x, y+1, obj_wall)
-	{
-		sprite_index = spr_run;
-	}
+    // Verifica se a tecla de ataque foi pressionada
+    if (key_attack) {
+        state = player_states_atk;
+    }
 }
 
-#endregion
+function player_states_atk() {
+   
 
-    // --- VERIFICAR VIDA ---
-    if (global.life < 1) {
-        game_restart();
+    sprite_index = spr_attack;
+
+    // Verifica se a animação chegou ao final
+    if (image_index >= image_number - 1) {
+        state = PlayerStateFree; // Sai do estado de ataque
+		image_index = 0
     }
 }

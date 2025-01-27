@@ -1,5 +1,5 @@
 
-switch (global.life)
+switch (global.life_player)
 {
 	case 0:
 	draw_sprite(spr_life,4,100,62)
