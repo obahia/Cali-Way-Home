@@ -3,7 +3,7 @@
   "%Name":"spr_jump",
   "bboxMode":2,
   "bbox_bottom":135,
-  "bbox_left":47,
+  "bbox_left":48,
   "bbox_right":95,
   "bbox_top":48,
   "collisionKind":5,

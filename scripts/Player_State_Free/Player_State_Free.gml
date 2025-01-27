@@ -1,4 +1,4 @@
-function PlayerStateFree() {
+function Player_State_Free() {
     script_execute(get_input);
 
     #region MOVIMENT
@@ -31,6 +31,12 @@ function PlayerStateFree() {
     if (place_meeting(x, y + 1, obj_wall) && key_jump) {
         vspd -= 8;
     }
+	// ATAQUE
+	
+	if(key_attack)  {
+	state = PlayerState.ATTACK
+	image_index = 0;
+	}
     #endregion
 
     #region CHANGE SPRITE
@@ -49,20 +55,6 @@ function PlayerStateFree() {
     }
     #endregion
 
-    // Verifica se a tecla de ataque foi pressionada
-    if (key_attack) {
-        state = player_states_atk;
-    }
+  
 }
 
-function player_states_atk() {
-   
-
-    sprite_index = spr_attack;
-
-    // Verifica se a animação chegou ao final
-    if (image_index >= image_number - 1) {
-        state = PlayerStateFree; // Sai do estado de ataque
-		image_index = 0
-    }
-}
