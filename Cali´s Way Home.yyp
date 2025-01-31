@@ -42,7 +42,6 @@
   "name":"Cali´s Way Home",
   "resources":[
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
-    {"id":{"name":"obj_effect","path":"objects/obj_effect/obj_effect.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_hitbox","path":"objects/obj_hitbox/obj_hitbox.yy",},},
     {"id":{"name":"obj_life","path":"objects/obj_life/obj_life.yy",},},
@@ -57,7 +56,6 @@
     {"id":{"name":"Player_State_Attack","path":"scripts/Player_State_Attack/Player_State_Attack.yy",},},
     {"id":{"name":"Player_State_Free","path":"scripts/Player_State_Free/Player_State_Free.yy",},},
     {"id":{"name":"PlayerStateFreeze","path":"scripts/PlayerStateFreeze/PlayerStateFreeze.yy",},},
-    {"id":{"name":"spr_attack_HB","path":"sprites/spr_attack_HB/spr_attack_HB.yy",},},
     {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_bg2","path":"sprites/spr_bg2/spr_bg2.yy",},},
@@ -68,6 +66,7 @@
     {"id":{"name":"spr_death","path":"sprites/spr_death/spr_death.yy",},},
     {"id":{"name":"spr_fall","path":"sprites/spr_fall/spr_fall.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
+    {"id":{"name":"spr_hb","path":"sprites/spr_hb/spr_hb.yy",},},
     {"id":{"name":"spr_idle","path":"sprites/spr_idle/spr_idle.yy",},},
     {"id":{"name":"spr_jump","path":"sprites/spr_jump/spr_jump.yy",},},
     {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},},

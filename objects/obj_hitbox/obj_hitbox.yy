@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_hitbox",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_hitbox",
   "overriddenProperties":[],
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_attack_HB",
-    "path":"sprites/spr_attack_HB/spr_attack_HB.yy",
+    "name":"spr_hb",
+    "path":"sprites/spr_hb/spr_hb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -34,8 +34,9 @@ function Player_State_Free() {
 	// ATAQUE
 	
 	if(key_attack)  {
-	state = PlayerState.ATTACK
 	image_index = 0;
+	state = PlayerState.ATTACK
+	
 	}
     #endregion
 
@@ -57,4 +58,3 @@ function Player_State_Free() {
 
   
 }
-

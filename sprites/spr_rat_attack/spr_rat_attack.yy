@@ -26,6 +26,7 @@
   "height":254,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"a0095461-75bb-4175-a084-778e86c8529a","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a0095461-75bb-4175-a084-778e86c8529a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"4cfbe05a-fc1b-4c06-b344-cb633f80c87f","blendMode":0,"displayName":"default","isLocked":false,"name":"4cfbe05a-fc1b-4c06-b344-cb633f80c87f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_rat_attack",

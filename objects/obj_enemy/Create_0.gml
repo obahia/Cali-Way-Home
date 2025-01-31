@@ -4,7 +4,7 @@ vspd = 0;
 grv = 0.4;
 hp = 10;
 distance = 300;
-life_enemy = 4;
+global.life_enemy = 20;
 
 image_speed = 0.6;
 
