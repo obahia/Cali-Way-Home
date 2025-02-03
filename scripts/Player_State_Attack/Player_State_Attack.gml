@@ -5,7 +5,7 @@ function Player_State_Attack()
 	{
 	 if (!instance_exists(obj_hitbox)) 
 	 {
-       instance_create_layer(x +(35 * image_xscale ),y, layer, obj_hitbox)
+       instance_create_layer(x +(70 * image_xscale ),y, layer, obj_hitbox)
      }
 	 
 	}

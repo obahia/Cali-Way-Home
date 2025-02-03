@@ -43,7 +43,7 @@
     {"name":"spr_death","order":6,"path":"sprites/spr_death/spr_death.yy",},
     {"name":"spr_fall","order":4,"path":"sprites/spr_fall/spr_fall.yy",},
     {"name":"spr_ground","order":4,"path":"sprites/spr_ground/spr_ground.yy",},
-    {"name":"spr_hb","order":3,"path":"sprites/spr_hb/spr_hb.yy",},
+    {"name":"spr_hb","order":11,"path":"sprites/spr_hb/spr_hb.yy",},
     {"name":"spr_jump","order":1,"path":"sprites/spr_jump/spr_jump.yy",},
     {"name":"spr_objground","order":5,"path":"sprites/spr_objground/spr_objground.yy",},
     {"name":"spr_rat_attack","order":2,"path":"sprites/spr_rat_attack/spr_rat_attack.yy",},

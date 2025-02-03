@@ -12,7 +12,7 @@ if(c > 0)
 			ds_list_add(hitbox_list,target);
 			with(target)
 			{
-				global.life_enemy -= 5;
+				life_enemy -= 5;
 				
 			}
 		}

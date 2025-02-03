@@ -22,7 +22,7 @@ if state = EnemyState.IDLE
 	sprite_index = spr_rat_idle;
 }
 
-if (global.life_enemy <= 0) {
+if (life_enemy <= 0) {
     instance_destroy(); // Destrói o inimigo
    
 }
