@@ -70,6 +70,7 @@
     {"id":{"name":"spr_bg5","path":"sprites/spr_bg5/spr_bg5.yy",},},
     {"id":{"name":"spr_damage","path":"sprites/spr_damage/spr_damage.yy",},},
     {"id":{"name":"spr_death","path":"sprites/spr_death/spr_death.yy",},},
+    {"id":{"name":"spr_doublejump","path":"sprites/spr_doublejump/spr_doublejump.yy",},},
     {"id":{"name":"spr_fall","path":"sprites/spr_fall/spr_fall.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
     {"id":{"name":"spr_hb","path":"sprites/spr_hb/spr_hb.yy",},},

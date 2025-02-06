@@ -24,13 +24,15 @@ function Player_State_Free() {
             y += sign(vspd);
         }
         vspd = 0;
+		 jump_count = 0;
     }
     y += vspd;
 
-    // JUMP
-    if (place_meeting(x, y + 1, obj_wall) && key_jump) {
-        vspd -= 8;
-    }
+// JUMP
+if (key_jump && jump_count < jump_max) { 
+    vspd = -8; // Ajuste a força do pulo conforme necessário
+    jump_count++; // Incrementa o contador de pulos
+}
 	// ATAQUE
 	
 	if(key_attack)  {
@@ -40,21 +42,28 @@ function Player_State_Free() {
 	}
     #endregion
 
-    #region CHANGE SPRITE
-    if (hspd != 0) image_xscale = sign(hspd);
+ #region CHANGE SPRITE
+if (hspd != 0) image_xscale = sign(hspd);
 
-    if (!place_meeting(x, y + 1, obj_wall)) {
-        if (vspd > 0) {
-            sprite_index = spr_fall;
-        } else if (vspd < 0) {
-            sprite_index = spr_jump;
+if (!place_meeting(x, y + 1, obj_wall)) { 
+    if (vspd > 0) { 
+        sprite_index = spr_fall; // Caindo
+    } else if (vspd < 0) { 
+        if (jump_count == 2) { 
+            sprite_index = spr_jump; // Se for o segundo pulo, usa o sprite de double jump
+        } else { 
+            sprite_index =spr_doublejump ; // Se for o primeiro pulo, usa o sprite normal
         }
-    } else if (hspd != 0) {
-        sprite_index = spr_run;
-    } else {
-        sprite_index = spr_idle;
     }
-    #endregion
+} else { 
+    if (hspd != 0) {
+        sprite_index = spr_run; // Correndo
+    } else {
+        sprite_index = spr_idle; // Parado
+    }
+}
+#endregion
+
 
   
 }
