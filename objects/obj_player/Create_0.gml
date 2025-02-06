@@ -1,9 +1,12 @@
-spd = 5; //velocidade
-hspd= 0; //velocidade horizontal
-vspd= 0; //velocidade vertical
-grv = 0.3; //gravidade
-jump_max = 2; //max em jump
-jump_count = 0; //contador de jump 
+spd              = 5;   //velocidade
+hspd             = 0;   //velocidade horizontal
+vspd             = 0;   //velocidade vertical
+grv              = 0.3; //gravidade
+jumps            = 0;
+jump_max         = 2;   //max em jump
+jump_height      = -8;  //altura do jump
+
+
 
 
 global.life_player = 4 ; //vida do jogador (em mudança)
