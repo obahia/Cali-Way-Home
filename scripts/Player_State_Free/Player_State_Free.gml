@@ -59,11 +59,11 @@ if (!place_meeting(x, y + 1, obj_wall)) {
     if (vspd > 0) { 
         sprite_index = spr_fall; // Caindo
     } else if (vspd < 0) { 
-        if (jumps == 2) { 
-            sprite_index = spr_doublejump; // Se for o segundo pulo, usa o sprite de double jump
-        } else { 
-            sprite_index = spr_jump; // Se for o primeiro pulo, usa o sprite normal
-        }
+       if (jumps == jump_max - 1) { 
+    sprite_index = spr_jump; //Se já usou um pulo e ainda pode pular, usa o sprite do double jump
+} else { 
+    sprite_index = spr_doublejump; /// Se for o primeiro pulo, usa o sprite normal
+}
     }
 } else { 
     if (hspd != 0) {

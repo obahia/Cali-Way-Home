@@ -4,7 +4,7 @@ vspd             = 0;   //velocidade vertical
 grv              = 0.3; //gravidade
 jumps            = 0;
 jump_max         = 2;   //max em jump
-jump_height      = -8;  //altura do jump
+jump_height      = -6.7; //altura do jump
 
 
 
