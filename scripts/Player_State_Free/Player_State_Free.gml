@@ -43,7 +43,7 @@ function Player_State_Free() {
   }
 #endregion
 	
-	#region// ATAQUE
+	#region // ATAQUE
 	
 	if(key_attack)  {
 	image_index = 0;
@@ -52,7 +52,9 @@ function Player_State_Free() {
 	}
     #endregion
 
- #region //CHANGE SPRITE
+ 
+   
+   #region //CHANGE SPRITE
 if (hspd != 0) image_xscale = sign(hspd);
 
 if (!place_meeting(x, y + 1, obj_wall)) { 

@@ -1,5 +1,4 @@
-// Os recursos de script mudaram para a v2.3.0; veja
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
+
 function Enemy_State_Chase(){
 
  script_execute(get_input);
@@ -49,8 +48,9 @@ y += vspd;
 		state = EnemyState.IDLE;
 	}
 	// SE O RATO ESTIVER PERTO DO JOGADOR ENTAO ATAQUE
-	if distance_to_object(obj_player) < 3
+	if distance_to_object(obj_player) < 1
 	{
 		state = EnemyState.ATTACK;
+	
 	}
 }

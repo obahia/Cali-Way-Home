@@ -5,6 +5,7 @@ grv = 0.4;
 hp = 10;
 distance = 300;
 life_enemy = 10;
+hit_cooldown = 0;
 
 image_speed = 0.6;
 

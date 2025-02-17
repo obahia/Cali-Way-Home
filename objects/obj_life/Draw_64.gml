@@ -1,24 +1,25 @@
 
-switch (global.life_player)
+if(instance_exists(obj_player)){
+for (var _i = 0; _i < global.life_max; _i++)
 {
-	case 0:
-	draw_sprite(spr_life,4,100,62)
-	break;
+	var _x = 55;
+	var _y = 55;
+	var _offset = 70;
+	var _x1 = _x + (_offset * _i);
+	gpu_set_fog(true,c_black,0,0);
+	draw_sprite(spr_life, 0, _x1, _y);
+	gpu_set_fog(false,c_black,0,0);
+}
+
+for (var _i = 0; _i <global.life; _i++)
+{
+	var _x = 55;
+	var _y = 55;
+	var _offset = 70;
+	var _x1 = _x + (_offset * _i);
 	
-	case 1:
-	draw_sprite(spr_life,3,100,62)
-	break;
+	draw_sprite(spr_life, 0, _x1, _y);
 	
-	case 2:
-	draw_sprite(spr_life,2,100,62)
-	break;
-	
-	case 3:
-	draw_sprite(spr_life,1,100,62)
-	break;
-	
-	case 4:
-	draw_sprite(spr_life,5,100,62)
-	break;
-	
+}
+
 }

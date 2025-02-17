@@ -13,7 +13,7 @@ if(c > 0)
 			with(target)
 			{
 				life_enemy -= 5;
-				
+              
 			}
 		}
 	}

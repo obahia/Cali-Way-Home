@@ -7,7 +7,7 @@ switch(state)
 	case PlayerState.FREEZE: PlayerStateFreeze(); break;
 }
 
-if keyboard_check_pressed(ord("G"))
+if keyboard_check_pressed(ord("R"))
 {
-	state = PlayerState.FREEZE;
+	game_restart();
 }
