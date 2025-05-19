@@ -1,7 +1,7 @@
 target_ = obj_player;
 // Define a resolução base da câmera (o que será visível na tela)
-global.base_width = 1600;
-global.base_height = 900;
+global.base_width = 960;
+global.base_height = 540;
 
 // Obtém a resolução do monitor
 var screen_width = display_get_width();

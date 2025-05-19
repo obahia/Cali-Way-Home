@@ -1,4 +1,9 @@
 function Player_State_Free() {
+	if(move_checkpoint = true)
+{
+	exit
+}
+
     script_execute(get_input);
 
     #region MOVIMENTO
@@ -27,6 +32,17 @@ function Player_State_Free() {
 		 jump_count = 0;
     }
     y += vspd;
+	
+	var collision_e = instance_place(x + hspd, y, obj_enemy)
+	if(collision_e)
+	{
+		hspd = 0
+		vspd = 0
+		vspd -=4
+		damage_dir = point_direction(collision_e.x, collision_e.y, x,y)
+		state = PlayerState.DAMAGE
+	}
+	
 	
 #endregion
 	

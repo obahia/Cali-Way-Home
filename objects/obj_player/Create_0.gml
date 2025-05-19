@@ -5,12 +5,13 @@ grv              = 0.3; //gravidade
 jumps            = 0;
 jump_max         = 2;   //max em jump
 jump_height      = -6.7; //altura do jump
+move_checkpoint  = false;
+damage_dir       = 0;
 
 
 
-
-global.life_max = 4 ; //vida do jogador (em mudança)
-global.life = global.life_max;
+life_max = 4 ; //vida do jogador (em mudança)
+life = life_max;
  state = PlayerState.FREE;
 
  
@@ -18,5 +19,6 @@ global.life = global.life_max;
  {
 	FREE,
 	FREEZE,
-	ATTACK
+	ATTACK,
+	DAMAGE
  }

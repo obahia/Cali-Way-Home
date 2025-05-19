@@ -30,10 +30,10 @@ if (life_enemy <= 0) {
 if (place_meeting(x, y, obj_player)) // Verifica colisão com o player
 {
     if (!hit_cooldown) { // Evita perder várias vidas instantaneamente
-        global.life -= 1; // Remove 1 vida do jogador
+        obj_player.life -= 1; // Remove 1 vida do jogador
         hit_cooldown = 30; // Define um tempo de invulnerabilidade (30 frames)
 
-        if (global.life <= 0) {
+        if (obj_player.life <= 0) {
             room_restart(); // Reinicia o jogo se a vida chegar a 0
         }
     }
