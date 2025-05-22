@@ -33,15 +33,7 @@ function Player_State_Free() {
     }
     y += vspd;
 	
-	var collision_e = instance_place(x + hspd, y, obj_enemy)
-	if(collision_e)
-	{
-		hspd = 0
-		vspd = 0
-		vspd -=4
-		damage_dir = point_direction(collision_e.x, collision_e.y, x,y)
-		state = PlayerState.DAMAGE
-	}
+	
 	
 	
 #endregion

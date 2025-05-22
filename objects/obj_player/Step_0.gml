@@ -6,7 +6,7 @@ switch(state)
 	
 	case PlayerState.FREEZE: PlayerStateFreeze(); break;
 	
-	case PlayerState.DAMAGE: Player_State_Damage(); break; 
+	
 }
 
 if keyboard_check_pressed(ord("R"))
