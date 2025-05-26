@@ -63,7 +63,7 @@
     },
     "name":"spr_attack",
     "playback":1,
-    "playbackSpeed":9.0,
+    "playbackSpeed":13.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
