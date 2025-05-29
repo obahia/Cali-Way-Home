@@ -46,6 +46,7 @@
   },
   "name":"Cali´s Way Home",
   "resources":[
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_gui_attack","path":"objects/obj_gui_attack/obj_gui_attack.yy",},},
@@ -74,6 +75,7 @@
     {"id":{"name":"spr_bg3","path":"sprites/spr_bg3/spr_bg3.yy",},},
     {"id":{"name":"spr_bg4","path":"sprites/spr_bg4/spr_bg4.yy",},},
     {"id":{"name":"spr_bg5","path":"sprites/spr_bg5/spr_bg5.yy",},},
+    {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_build","path":"sprites/spr_build/spr_build.yy",},},
     {"id":{"name":"spr_damage","path":"sprites/spr_damage/spr_damage.yy",},},
     {"id":{"name":"spr_doublejump","path":"sprites/spr_doublejump/spr_doublejump.yy",},},
