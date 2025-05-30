@@ -103,7 +103,7 @@
     {"id":{"name":"spr_run","path":"sprites/spr_run/spr_run.yy",},},
     {"id":{"name":"spr_space","path":"sprites/spr_space/spr_space.yy",},},
     {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},},
-    {"id":{"name":"spr_wallslide","path":"sprites/spr_wallslide/spr_wallslide.yy",},},
+    {"id":{"name":"spr_wall_slide","path":"sprites/spr_wall_slide/spr_wall_slide.yy",},},
     {"id":{"name":"tr_build","path":"tilesets/tr_build/tr_build.yy",},},
     {"id":{"name":"tr_ground","path":"tilesets/tr_ground/tr_ground.yy",},},
     {"id":{"name":"tr_props","path":"tilesets/tr_props/tr_props.yy",},},

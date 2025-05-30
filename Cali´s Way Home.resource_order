@@ -74,7 +74,7 @@
     {"name":"spr_run","order":2,"path":"sprites/spr_run/spr_run.yy",},
     {"name":"spr_space","order":3,"path":"sprites/spr_space/spr_space.yy",},
     {"name":"spr_start","order":13,"path":"sprites/spr_start/spr_start.yy",},
-    {"name":"spr_wallslide","order":15,"path":"sprites/spr_wallslide/spr_wallslide.yy",},
+    {"name":"spr_wall_slide","order":15,"path":"sprites/spr_wall_slide/spr_wall_slide.yy",},
     {"name":"tr_build","order":4,"path":"tilesets/tr_build/tr_build.yy",},
     {"name":"tr_ground","order":2,"path":"tilesets/tr_ground/tr_ground.yy",},
     {"name":"tr_props","order":3,"path":"tilesets/tr_props/tr_props.yy",},
