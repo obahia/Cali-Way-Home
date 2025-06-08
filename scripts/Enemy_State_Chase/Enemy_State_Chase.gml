@@ -40,7 +40,7 @@ y += vspd;
 	if (hspd !=0) image_xscale =sign(hspd); //TROCA O LADO DO SPRITE
 	
 	vir = sign(obj_player.x -x);
-	hspd = vir * 4;
+	hspd = vir * spd;
 	
 	//SE O RATO ESTIVER LONGE DO JOGADOR ENTAO FIQUE PARADO
 	if distance_to_object(obj_player) > distance

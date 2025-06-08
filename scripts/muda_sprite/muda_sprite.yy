@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"muda_sprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"muda_sprite",
+  "parent":{
+    "name":"player",
+    "path":"folders/Scripts/player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
