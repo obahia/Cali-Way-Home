@@ -67,6 +67,12 @@
     {"name":"spr_right","order":1,"path":"sprites/spr_right/spr_right.yy",},
     {"name":"spr_run","order":2,"path":"sprites/spr_run/spr_run.yy",},
     {"name":"spr_space","order":3,"path":"sprites/spr_space/spr_space.yy",},
+<<<<<<< HEAD
+=======
+    {"name":"spr_start","order":13,"path":"sprites/spr_start/spr_start.yy",},
+    {"name":"spr_wallslide","order":15,"path":"sprites/spr_wallslide/spr_wallslide.yy",},
+    {"name":"tr_build","order":4,"path":"tilesets/tr_build/tr_build.yy",},
+>>>>>>> parent of 899e11f (wall slide)
     {"name":"tr_ground","order":2,"path":"tilesets/tr_ground/tr_ground.yy",},
   ],
 }

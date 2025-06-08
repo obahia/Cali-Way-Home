@@ -95,6 +95,12 @@
     {"id":{"name":"spr_right","path":"sprites/spr_right/spr_right.yy",},},
     {"id":{"name":"spr_run","path":"sprites/spr_run/spr_run.yy",},},
     {"id":{"name":"spr_space","path":"sprites/spr_space/spr_space.yy",},},
+<<<<<<< HEAD
+=======
+    {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},},
+    {"id":{"name":"spr_wallslide","path":"sprites/spr_wallslide/spr_wallslide.yy",},},
+    {"id":{"name":"tr_build","path":"tilesets/tr_build/tr_build.yy",},},
+>>>>>>> parent of 899e11f (wall slide)
     {"id":{"name":"tr_ground","path":"tilesets/tr_ground/tr_ground.yy",},},
   ],
   "resourceType":"GMProject",
