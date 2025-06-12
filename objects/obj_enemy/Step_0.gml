@@ -50,7 +50,7 @@ if state = EnemyState.IDLE
 
 if (place_meeting(x, y, obj_player)) {
     if (!hit_cooldown && obj_player.can_take_damage) {
-        obj_player.life -= 1;
+        obj_player.life -= 0.5;
         hit_cooldown = 30;
         
         // Pega posição do player e inimigo (x,y)
