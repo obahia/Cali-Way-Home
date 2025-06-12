@@ -1,7 +1,6 @@
 draw_set_font(ft_menu);
 
 
-
 var dist = 55;
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();
