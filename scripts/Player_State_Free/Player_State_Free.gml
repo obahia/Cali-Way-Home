@@ -54,43 +54,46 @@ function Player_State_Free() {
     y += vspd;
     #endregion
 
-    #region PULO
-    // Reset jumps when on ground
-    if (place_meeting(x, y + 1, obj_wall)) {
-        jumps = jump_max;
+   #region PULO
+// Reset jumps when on ground
+if (place_meeting(x, y + 1, obj_wall)) {
+    jumps = jump_max;
+}
+
+// WALL JUMP - NOVO!
+if (is_wall_sliding && key_jump) {
+    var jump_dir = 0;
+    if (touching_wall_left) {
+        jump_dir = 1;
+    } else if (touching_wall_right) {
+        jump_dir = -1;
     }
 
-    // WALL JUMP - NOVO!
-    if (is_wall_sliding && key_jump) {
-        // Determine a direção do pulo (oposta à parede)
-        var jump_dir = 0;
-        if (touching_wall_left) {
-            jump_dir = 1; // pula para direita
-        } else if (touching_wall_right) {
-            jump_dir = -1; // pula para esquerda
-        }
-        
-        // Aplica o pulo
-        vspd = wall_jump_height; // altura do pulo na parede
-        hspd = jump_dir * wall_jump_hspd; // impulso horizontal
-        
-        // Sai do wall slide
-        is_wall_sliding = false;
-        
-        // Ativa o sprite de pulo
-        sprite_index = spr_jump;
-    }
-    // Normal jump
-    else if (jumps > 0 && key_jump) {
-        jumps -= 1;
-        vspd = jump_height;
-    }
-    #endregion
+    vspd = wall_jump_height;
+    hspd = jump_dir * wall_jump_hspd;
+    is_wall_sliding = false;
+    sprite_index = spr_jump;
+
+    // 🎵 Som de pulo na parede
+    audio_play_sound(snd_jump, 1, false);
+}
+// Normal jump
+else if (jumps > 0 && key_jump) {
+    jumps -= 1;
+    vspd = jump_height;
+
+    // 🎵 Som de pulo normal
+    audio_play_sound(snd_jump, 1, false);
+}
+#endregion
+
 
     #region ATAQUE
     if (key_attack) {
         image_index = 0;
         state = PlayerState.ATTACK;
+		audio_play_sound(snd_attack, 1, false); // som de ataque
+        audio_play_sound(snd_meow_attack, 1, false);    // som da gata miando
     }
     #endregion
 

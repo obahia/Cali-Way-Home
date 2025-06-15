@@ -13,18 +13,15 @@ can_take_damage      = true;  //verificar se pode tomar dnao
 invincible_timer     = 0;     //tempo de invicibilidade
 is_wall_sliding      = false; //verificar se esta deslizando
 wall_slide_speed     = 1.5;   //velocidade do wall slide
-wall_jump_height     = -7; // Altura do pulo (negativo para pular para cima)
-wall_jump_hspd        = 8;     
+wall_jump_height     = -7;    // Altura do pulo (negativo para pular para cima)
+wall_jump_hspd       = 8;     
+life_max             = 4 ;    //vida do jogador (em mudança)
+life                 = life_max;
+state                = PlayerState.FREE;
 
-
-
-
-
-
-life_max = 4 ; //vida do jogador (em mudança)
-life = life_max;
- state = PlayerState.FREE;
-
+ 
+ 
+ 
  
  enum PlayerState
  {
