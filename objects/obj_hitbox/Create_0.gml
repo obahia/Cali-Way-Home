@@ -1,20 +1,33 @@
-colision_list = ds_list_create(); //LISTA DE COLISAO 
-hitbox_list = ds_list_create(); //LISTA DOS OBJETOS JA VERIFICADOS
-var c  = instance_place_list(x,y, obj_enemy,colision_list,false)
+colision_list = ds_list_create(); // lista de colisões
+hitbox_list = ds_list_create();   // lista de alvos já atingidos
 
-if(c > 0)
+// Detecta colisões com QUALQUER objeto
+var c = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, all, false, false, colision_list, false);
+
+if (c > 0)
 {
-	for(var i = 0; i < ds_list_size(colision_list);i++)
-	{
-		var target = colision_list[| i ];
-		if(!ds_list_find_value(hitbox_list,target))
-		{
-			ds_list_add(hitbox_list,target);
-			with(target)
-			{
-				life_enemy -= 5;
-              
-			}
-		}
-	}
+    for (var i = 0; i < ds_list_size(colision_list); i++)
+    {
+        var target = colision_list[| i];
+
+        // Verifica se o objeto é um inimigo OU o boss
+        if (target.object_index == obj_enemy || target.object_index == obj_boss)
+        {
+            // Evita bater duas vezes no mesmo
+            if (!ds_list_find_value(hitbox_list, target))
+            {
+                ds_list_add(hitbox_list, target);
+
+                with (target)
+                {
+                    if (object_index == obj_enemy) {
+                        life_enemy -= 5;
+                    }
+                    else if (object_index == obj_boss) {
+                        hp -= 5; // ou hp -= 5, dependendo do nome
+                    }
+                }
+            }
+        }
+    }
 }

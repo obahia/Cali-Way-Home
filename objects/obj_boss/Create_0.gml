@@ -1,27 +1,23 @@
-spd                  = 5;     //velocidade
-hspd                 = 0;     //velocidade horizontal
-vspd                 = 0;     //velocidade vertical
-grv                  = 0.3;   //gravidade
-cooldown = 0;
-decision_timer = irandom_range(60, 120); // entre 1s e 2s
+spd = 2.5;
+hspd = 0;
+vspd = 0;
+grv = 0.4;
 hp = 10;
+hp_max = 10;
+show_bar = false; 
+distance = 300;
+cooldown = 0;
+decision_timer = irandom_range(60, 120);
+is_dying = false;
 
-state = BossState.IDLE;
+image_speed = 0.6;
 
-// Estados
-enum BossState {
-    IDLE,
-    CHASE,
-    ATTACK,
- 
+state = BossState.FREE;
+
+enum BossState
+{
+	FREE,
+	CHASE,
+	ATTACK,
+	DEAD,
 }
-
-
-
-
-// Sprite setup
-sprite_idle = spr_boss_idle;
-sprite_walk = spr_boss_run;
-sprite_attack = spr_boss_attack;
-sprite_dead = spr_boss_death;
-
