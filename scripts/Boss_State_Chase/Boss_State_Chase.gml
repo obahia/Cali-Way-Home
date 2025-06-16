@@ -41,12 +41,12 @@ y += vspd;
 	vir = sign(obj_player.x -x);
 	hspd = vir * spd;
 	
-	//SE O RATO ESTIVER LONGE DO JOGADOR ENTAO FIQUE PARADO
+	//SE O BOSS  ESTIVER LONGE DO JOGADOR ENTAO FIQUE PARADO
 	if distance_to_object(obj_player) > distance
 	{
 		state = BossState.FREE;
 	}
-	// SE O RATO ESTIVER PERTO DO JOGADOR ENTAO ATAQUE
+	// SE O BOSS ESTIVER PERTO DO JOGADOR ENTAO ATAQUE
 	if distance_to_object(obj_player) < 1
 	{
 		state = BossState.ATTACK;
