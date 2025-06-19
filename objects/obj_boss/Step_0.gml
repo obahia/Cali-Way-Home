@@ -5,6 +5,7 @@ if (is_dying) {
 
     if (image_index >= image_number - 1) {
         instance_destroy();
+		room_restart();
     }
     exit;
 }
@@ -44,7 +45,7 @@ switch (state) {
 if (place_meeting(x, y, obj_player)) {
     if (!cooldown && obj_player.can_take_damage) {
         obj_player.life -= 1;
-        cooldown = 30;
+        cooldown = 20;
         audio_play_sound(snd_hit1, 0, false);
         audio_play_sound(snd_hit2, 1, false);
 
@@ -69,16 +70,3 @@ if (cooldown > 0) {
     cooldown -= 1;
 }
 
-// =================== EXIBE BARRA DE VIDA ===================
-var player = instance_nearest(x, y, obj_player);
-var dist = point_distance(x, y, player.x, player.y);
-
-if (dist < distance || hp < hp_max) {
-    show_bar = true;
-}
-
-if (is_dying || hp <= 0) {
-    show_bar = false;
-}
-
-show_bar = true;
