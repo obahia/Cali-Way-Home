@@ -54,6 +54,21 @@ function Player_State_Free() {
     y += vspd;
     #endregion
 
+
+  #region DIAOLOGO
+  
+  if distance_to_object(obj_par_npc) <=10 
+  {
+	  if keyboard_check_pressed(ord("F"))
+	  {
+		  var _npc = instance_nearest(x, y, obj_par_npc);
+		  var _dialogo = instance_create_layer(x,y, "Dialogo", obj_dialogo);
+		  _dialogo.npc_nome = _npc.nome;
+	  }
+  }
+  
+  
+  #endregion
    #region PULO
 // Reset jumps when on ground
 if (place_meeting(x, y + 1, obj_wall)) {
