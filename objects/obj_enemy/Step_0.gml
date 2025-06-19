@@ -10,6 +10,7 @@ if (is_dying) {
 	    exit; // Sai do Step pra não continuar executando
 	}
 
+
 switch(state)
 {
 	case EnemyState.IDLE: Enemy_State_Idle(); break;

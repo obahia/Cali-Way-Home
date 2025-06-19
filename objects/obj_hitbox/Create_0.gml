@@ -1,33 +1,45 @@
-colision_list = ds_list_create(); // lista de colisões
-hitbox_list = ds_list_create();   // lista de alvos já atingidos
+collision_list = ds_list_create();
+hitbox_list = ds_list_create();
 
-// Detecta colisões com QUALQUER objeto
-var c = collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, all, false, false, colision_list, false);
+collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, all, false, false, collision_list, false);
 
-if (c > 0)
+if (ds_list_size(collision_list) > 0)
 {
-    for (var i = 0; i < ds_list_size(colision_list); i++)
+    for (var i = 0; i < ds_list_size(collision_list); i++)
     {
-        var target = colision_list[| i];
+        var target = collision_list[| i];
 
-        // Verifica se o objeto é um inimigo OU o boss
         if (target.object_index == obj_enemy || target.object_index == obj_boss)
         {
-            // Evita bater duas vezes no mesmo
             if (!ds_list_find_value(hitbox_list, target))
             {
                 ds_list_add(hitbox_list, target);
 
-                with (target)
-                {
-                    if (object_index == obj_enemy) {
-                        life_enemy -= 5;
-                    }
-                    else if (object_index == obj_boss) {
-                        hp -= 5; // ou hp -= 5, dependendo do nome
-                    }
-                }
+               with (target)
+{
+    if (object_index == obj_enemy)
+    {
+        life_enemy -= 5;
+
+        var dir = sign(x - other.x);
+        hspd = 90 * dir;
+        vspd = 0; // sem empurrar pra cima
+	
+        hit_cooldown = 30;
+
+        audio_play_sound(snd_hit2, 0, false);
+    }
+    else if (object_index == obj_boss)
+    {
+        hp -= 5;
+    }
+}
+
             }
         }
     }
 }
+
+// lembra de limpar a lista no final do frame pra evitar bugs
+ds_list_clear(hitbox_list);
+ds_list_clear(collision_list);
