@@ -1,75 +1,82 @@
-🐾 Cali’s Way Home
+# 🐾 Cali’s Way Home  
+### 🎮 Jogo 2D em pixel art
 
-Cali’s Way Home é um jogo 2D desenvolvido como projeto final do curso de Programação.
-A história acompanha Cali, uma gata perdida que precisa enfrentar desafios pela cidade para reencontrar o caminho de casa. No percurso, ela ajuda outros gatos abandonados, supera obstáculos e encara chefes em diferentes fases.
+**Cali’s Way Home** é um jogo 2D de plataforma que conta a história de **Cali**, uma gata perdida que precisa enfrentar os perigos da cidade para voltar pra casa.  
+Durante a jornada, ela encontra outros gatos, supera obstáculos e encara chefes desafiadores em diferentes fases.  
 
-🎮 Gameplay
+---
 
-Controle a gata Cali em um mundo 2D cheio de plataformas.
+## 🕹️ Iniciar o Jogo
 
-Enfrente inimigos e chefes desafiadores com diferentes padrões de ataque.
+1. Abre o jogo.  
+2. No **menu principal**, tens as seguintes opções:
 
-Interaja com gatos abandonados para desbloquear diálogos e segredos.
+   - `Jogar`: Inicia a aventura da Cali. 
+   - `Sair`: Fecha o jogo.  
 
-Colete itens para restaurar energia e melhorar suas habilidades.
+---
 
-🛠️ Tecnologias utilizadas
+## 🎮 Controlo da Personagem
 
-GameMaker Studio 2 — motor principal do jogo
+### Teclado
 
-GML (GameMaker Language) — programação da lógica de gameplay
+- **Mover para a esquerda/direita**: `A` / `D`  
+- **Saltar**: `Barra de Espaço`  
+- **Ataque**: `botao esquerdo`  
+- **Interagir / Falar com gatos**: `seta para cima`  
+- **Pausar o jogo**: `ESC`
 
-Aseprite — criação dos sprites e animações
+---
 
-Audacity / Freesound — edição e seleção dos efeitos sonoros
+## 🧩 Mecânicas Principais
 
-👩‍💻 Desenvolvimento técnico
+- Sistema de **movimentação fluida**, com *jump*, *double jump* e *wall slide*.  
+- **IA dos inimigos** com rotinas de patrulha e ataque.  
+- **Chefes** com múltiplas fases e padrões de ataque.  
+- Interação com **NPCs felinos** que ajudam a avançar na história.  
+- Itens colecionáveis que **restauram energia** ou **aumentam habilidades**.  
 
-Sistema de movimentação fluida com mecânicas de jump, double jump e wall slide.
+---
 
-Controle de colisões e gravidade personalizado para suavidade e precisão.
+## 💻 Tecnologias Utilizadas
 
-IA dos inimigos baseada em detecção de distância e rotinas de patrulha.
+- **GameMaker Studio 2** — motor principal do jogo  
+- **GML (GameMaker Language)** — lógica e scripts  
+- **Aseprite** — criação de sprites e animações  
+- **Audacity / Freesound** — efeitos sonoros e trilha sonora  
 
-Sistema de chefes com múltiplas fases e padrões de ataque.
+---
 
-Estrutura modular de código para facilitar futuras expansões.
+## 🎯 Objetivo do Projeto
 
-🧠 Objetivo do projeto
+Este jogo foi desenvolvido como **projeto final do curso de Programação**, com o objetivo de:
 
-Este projeto foi desenvolvido como projeto final do curso de Programação, com foco em:
+- Aplicar conceitos de **desenvolvimento de jogos 2D**  
+- Trabalhar **física, lógica e estrutura de código**  
+- Desenvolver **criatividade e design narrativo**  
+- Demonstrar um **projeto completo**, do protótipo à versão final  
 
-Aplicar conceitos de lógica de jogos, física e estrutura de código.
+---
 
-Desenvolver habilidades técnicas e criativas em design de jogos.
+## 🚀 Como Jogar
 
-Demonstrar o processo completo de planejamento, desenvolvimento e otimização de um jogo.
+1. Baixa o GameMaker
+2. Extrai os arquivos e abre o `.exe`  
+3. Segue as instruções e começa tua jornada com a Cali 🐱  
 
-🚀 Como jogar
+---
 
-Baixe o jogo na seção Releases
- (ou adicione o link quando publicar)
+## 👤 Autor
 
-Extraia os arquivos e execute o .exe
+Desenvolvido por **João Victor**  
+📧 Email: joaovictorbahia@gmail.com
+💻 GitHub: [@joaobahia](https://github.com/joaobahia)  
 
-Use as teclas:
+---
 
-⬅️ ➡️ — mover
+## 🐱 Agradecimentos
 
-Espaço — pular
+Agradecimento especial a todos os que apoiaram o desenvolvimento do projeto.  
+E, claro, à **Cali**, que inspirou esta história. 💖  
 
-⬇️ — interagir
-
-Botão esquerdo rato— ataque
-
-
-👤 Autor
-
-Desenvolvido por João Victor
-📧 Contato: joaovictorbahia@gmail.com
-💻 GitHub: @joaobahia
-
-🐱 Agradecimentos
-
-A todos os colegas, professores e amigos que apoiaram o desenvolvimento deste projeto.
-E, claro, à Cali, a gata que inspirou esta jornada. 🩶
+**Boa sorte ajudando a Cali a encontrar o caminho de casa!** 🌆✨  
