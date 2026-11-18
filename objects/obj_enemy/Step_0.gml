@@ -10,6 +10,7 @@ if (is_dying) {
 	    exit; // Sai do Step pra não continuar executando
 	}
 
+
 switch(state)
 {
 	case EnemyState.IDLE: Enemy_State_Idle(); break;
@@ -50,8 +51,11 @@ if state = EnemyState.IDLE
 
 if (place_meeting(x, y, obj_player)) {
     if (!hit_cooldown && obj_player.can_take_damage) {
-        obj_player.life -= 1;
+        obj_player.life -= 0.5;
         hit_cooldown = 30;
+		audio_play_sound(snd_hit1, 0, false);
+		audio_play_sound(snd_hit2, 1, false);
+
         
         // Pega posição do player e inimigo (x,y)
         var player_x = obj_player.x;

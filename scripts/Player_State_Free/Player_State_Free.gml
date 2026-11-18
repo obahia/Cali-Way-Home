@@ -32,48 +32,63 @@ function Player_State_Free() {
 		 jump_count = 0;
     }
     y += vspd;
-	
-	
-	
-	
-#endregion
-	
-    #region PULO
- 
-   // JUMP
-  if (place_meeting(x, y + 1, obj_wall)) { 
-    jumps = jump_max;
-  }
-  if(jumps > 0) && (key_jump)
-  {
-	jumps -=1;
-	vspd = jump_height;
-  }
-#endregion
-	
-	#region // ATAQUE
-	
-	if(key_attack)  {
-	image_index = 0;
-	state = PlayerState.ATTACK
-	
-	}
     #endregion
 
- 
-   
-   #region //CHANGE SPRITE
-if (hspd != 0) image_xscale = sign(hspd);
 
-if (!place_meeting(x, y + 1, obj_wall)) { 
-    if (vspd > 0) { 
-        sprite_index = spr_fall; // Caindo
-    } else if (vspd < 0) { 
-       if (jumps == jump_max - 1) { 
-    sprite_index = spr_jump; //Se já usou um pulo e ainda pode pular, usa o sprite do double jump
-} else { 
-    sprite_index = spr_doublejump; /// Se for o primeiro pulo, usa o sprite normal
+  #region DIAOLOGO
+  
+  if distance_to_object(obj_par_npc) <=10 
+  {
+	  if keyboard_check_pressed(ord("F"))
+	  {
+		  var _npc = instance_nearest(x, y, obj_par_npc);
+		  var _dialogo = instance_create_layer(x,y, "Dialogo", obj_dialogo);
+		  _dialogo.npc_nome = _npc.nome;
+	  }
+  }
+  
+  
+  #endregion
+   #region PULO
+// Reset jumps when on ground
+if (place_meeting(x, y + 1, obj_wall)) {
+    jumps = jump_max;
 }
+
+// WALL JUMP - NOVO!
+if (is_wall_sliding && key_jump) {
+    var jump_dir = 0;
+    if (touching_wall_left) {
+        jump_dir = 1;
+    } else if (touching_wall_right) {
+        jump_dir = -1;
+    }
+
+    vspd = wall_jump_height;
+    hspd = jump_dir * wall_jump_hspd;
+    is_wall_sliding = false;
+    sprite_index = spr_jump;
+
+    // 🎵 Som de pulo na parede
+    audio_play_sound(snd_jump, 1, false);
+}
+// Normal jump
+else if (jumps > 0 && key_jump) {
+    jumps -= 1;
+    vspd = jump_height;
+
+    // 🎵 Som de pulo normal
+    audio_play_sound(snd_jump, 1, false);
+}
+#endregion
+
+
+    #region ATAQUE
+    if (key_attack) {
+        image_index = 0;
+        state = PlayerState.ATTACK;
+		audio_play_sound(snd_attack, 1, false); // som de ataque
+        audio_play_sound(snd_meow_attack, 1, false);    // som da gata miando
     }
 } else { 
     if (hspd != 0) {

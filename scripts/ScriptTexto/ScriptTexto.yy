@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ScriptTexto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ScriptTexto",
+  "parent":{
+    "name":"dialogo",
+    "path":"folders/Scripts/dialogo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

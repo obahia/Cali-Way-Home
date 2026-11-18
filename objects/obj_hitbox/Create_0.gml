@@ -1,20 +1,45 @@
-colision_list = ds_list_create(); //LISTA DE COLISAO 
-hitbox_list = ds_list_create(); //LISTA DOS OBJETOS JA VERIFICADOS
-var c  = instance_place_list(x,y, obj_enemy,colision_list,false)
+collision_list = ds_list_create();
+hitbox_list = ds_list_create();
 
-if(c > 0)
+collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, all, false, false, collision_list, false);
+
+if (ds_list_size(collision_list) > 0)
 {
-	for(var i = 0; i < ds_list_size(colision_list);i++)
-	{
-		var target = colision_list[| i ];
-		if(!ds_list_find_value(hitbox_list,target))
-		{
-			ds_list_add(hitbox_list,target);
-			with(target)
-			{
-				life_enemy -= 5;
-              
-			}
-		}
-	}
+    for (var i = 0; i < ds_list_size(collision_list); i++)
+    {
+        var target = collision_list[| i];
+
+        if (target.object_index == obj_enemy || target.object_index == obj_boss)
+        {
+            if (!ds_list_find_value(hitbox_list, target))
+            {
+                ds_list_add(hitbox_list, target);
+
+               with (target)
+{
+    if (object_index == obj_enemy)
+    {
+        life_enemy -= 5;
+
+        var dir = sign(x - other.x);
+        hspd = 90 * dir;
+        vspd = 0; // sem empurrar pra cima
+	
+        hit_cooldown = 30;
+
+        audio_play_sound(snd_hit2, 0, false);
+    }
+    else if (object_index == obj_boss)
+    {
+        hp -= 5;
+    }
 }
+
+            }
+        }
+    }
+}
+
+// lembra de limpar a lista no final do frame pra evitar bugs
+ds_list_clear(hitbox_list);
+ds_list_clear(collision_list);

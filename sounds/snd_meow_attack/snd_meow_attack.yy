@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_meow_attack",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.8620408,
+  "name":"snd_meow_attack",
+  "parent":{
+    "name":"attack",
+    "path":"folders/Sons/player/attack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_meow_attack.mp3",
+  "type":1,
+  "volume":1.0,
+}
