@@ -19,8 +19,6 @@
     {"name":"inst_1FFD6BA0","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_2B2F06ED","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_14463E56","path":"rooms/rm1/rm1.yy",},
-<<<<<<< HEAD
-=======
     {"name":"inst_3B10A545","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_751AAD40","path":"rooms/rm1/rm1.yy",},
     {"name":"inst_6EFB37A5","path":"rooms/rm1/rm1.yy",},
@@ -758,7 +756,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":180,"hport":1080,"hspeed":-1,"hview":720,"inherit":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"vborder":100,"visible":true,"vspeed":-1,"wport":1920,"wview":1280,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":180,"hport":1080,"hspeed":-1,"hview":360,"inherit":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"vborder":100,"visible":true,"vspeed":-1,"wport":1920,"wview":640,"xport":0,"xview":0,"yport":0,"yview":900,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

@@ -36,11 +36,11 @@
     {"name":"background","order":3,"path":"folders/Sprites/background.yy",},
     {"name":"boss","order":11,"path":"folders/Sprites/boss.yy",},
     {"name":"enemy_rats","order":7,"path":"folders/Sprites/enemy_rats.yy",},
-    {"name":"big_boss","order":10,"path":"folders/Sprites/big_boss.yy",},
     {"name":"gui","order":8,"path":"folders/Sprites/gui.yy",},
     {"name":"life","order":14,"path":"folders/Sprites/life.yy",},
     {"name":"npc","order":13,"path":"folders/Sprites/npc.yy",},
     {"name":"player","order":2,"path":"folders/Sprites/player.yy",},
+    {"name":"ts","order":10,"path":"folders/Sprites/ts.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"ft_dialogo","order":1,"path":"fonts/ft_dialogo/ft_dialogo.yy",},
@@ -67,6 +67,7 @@
     {"name":"Enemy_State_Attack","order":2,"path":"scripts/Enemy_State_Attack/Enemy_State_Attack.yy",},
     {"name":"Enemy_State_Chase","order":1,"path":"scripts/Enemy_State_Chase/Enemy_State_Chase.yy",},
     {"name":"get_input","order":1,"path":"scripts/get_input/get_input.yy",},
+    {"name":"muda_sprite","order":4,"path":"scripts/muda_sprite/muda_sprite.yy",},
     {"name":"Player_State_Attack","order":3,"path":"scripts/Player_State_Attack/Player_State_Attack.yy",},
     {"name":"PlayerStateFreeze","order":2,"path":"scripts/PlayerStateFreeze/PlayerStateFreeze.yy",},
     {"name":"snd_hit2","order":1,"path":"sounds/snd_hit2/snd_hit2.yy",},
@@ -88,10 +89,8 @@
     {"name":"spr_build","order":3,"path":"sprites/spr_build/spr_build.yy",},
     {"name":"spr_cat2_idle","order":1,"path":"sprites/spr_cat2_idle/spr_cat2_idle.yy",},
     {"name":"spr_damage","order":5,"path":"sprites/spr_damage/spr_damage.yy",},
-    {"name":"spr_death","order":6,"path":"sprites/spr_death/spr_death.yy",},
     {"name":"spr_doublejump","order":12,"path":"sprites/spr_doublejump/spr_doublejump.yy",},
     {"name":"spr_fall","order":4,"path":"sprites/spr_fall/spr_fall.yy",},
-    {"name":"spr_ground","order":4,"path":"sprites/spr_ground/spr_ground.yy",},
     {"name":"spr_hb","order":11,"path":"sprites/spr_hb/spr_hb.yy",},
     {"name":"spr_jump","order":1,"path":"sprites/spr_jump/spr_jump.yy",},
     {"name":"spr_left","order":2,"path":"sprites/spr_left/spr_left.yy",},
@@ -112,12 +111,10 @@
     {"name":"spr_right","order":1,"path":"sprites/spr_right/spr_right.yy",},
     {"name":"spr_run","order":2,"path":"sprites/spr_run/spr_run.yy",},
     {"name":"spr_space","order":3,"path":"sprites/spr_space/spr_space.yy",},
-<<<<<<< HEAD
-=======
     {"name":"spr_start","order":13,"path":"sprites/spr_start/spr_start.yy",},
-    {"name":"spr_wallslide","order":15,"path":"sprites/spr_wallslide/spr_wallslide.yy",},
+    {"name":"spr_wall_slide","order":15,"path":"sprites/spr_wall_slide/spr_wall_slide.yy",},
     {"name":"tr_build","order":4,"path":"tilesets/tr_build/tr_build.yy",},
->>>>>>> parent of 899e11f (wall slide)
     {"name":"tr_ground","order":2,"path":"tilesets/tr_ground/tr_ground.yy",},
+    {"name":"tr_props","order":3,"path":"tilesets/tr_props/tr_props.yy",},
   ],
 }
